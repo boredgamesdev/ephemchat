@@ -18,7 +18,7 @@ export default function ChatComponent({ defaultLayout, navCollapsedSize }) {
 
     socket.on("messageReceived", (newMessage) => {
       useChatStore.setState((state) => ({
-          messages: [...state.messages, newMessage], // Update the store with the new message
+          messages: [...state.messages, newMessage], 
       }));
   });
     // Clean up the socket connection when the component is unmounted

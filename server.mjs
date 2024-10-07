@@ -22,7 +22,8 @@ app.prepare().then(() => {
         console.log("Message received:", message);
 
         // Broadcast the message to all connected clients
-        io.broadcast.emit("messageReceived", message);
+        io.emit("messageReceived", message);
+        
     });
 
     // Handle disconnection
