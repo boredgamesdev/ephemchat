@@ -34,7 +34,7 @@ export default function ChatBottombar({ isMobile }: ChatBottombarProps) {
   };
 
   const sendMessage = (newMessage: Message) => {
-    socket.emit("sendMessage", newMessage);;
+    socket.emit("sendMessage", newMessage);
   };
 
   const handleThumbsUp = () => {
